@@ -31,13 +31,16 @@
   z-index: 3;
   position: absolute;
   }
-  @media#{$brk-desktop}{
-
-  }
 }
 
 .inside .hero-profile-text{
   margin-top: 24px;
+  @media #{$brk-tablet}{
+    position: relative;
+  }
+  @media #{$brk-desktop}{
+    position: absolute;
+  }
 }
 .section-500{
   padding-top: 36px;
@@ -72,7 +75,15 @@
   & .caption{padding-top: 0px;}
 }
 
-.project-specs{margin-bottom: 24px;}
+.project-specs{
+  margin-bottom: 24px;
+  @media #{$brk-tablet}{
+    margin-top: -220px;
+  }
+  @media #{$brk-desktop}{
+    margin-top: 0px;
+  }
+}
 
 .proj-gallery{
   //margin-top: -140px;

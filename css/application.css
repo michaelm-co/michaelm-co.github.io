@@ -229,6 +229,12 @@ p {
 
 .inside .hero-profile-text {
   margin-top: 24px; }
+  @media only screen and (min-width: 768px) {
+    .inside .hero-profile-text {
+      position: relative; } }
+  @media only screen and (min-width: 1024px) {
+    .inside .hero-profile-text {
+      position: absolute; } }
 
 .section-500 {
   padding-top: 36px;
@@ -281,6 +287,12 @@ p {
 
 .project-specs {
   margin-bottom: 24px; }
+  @media only screen and (min-width: 768px) {
+    .project-specs {
+      margin-top: -220px; } }
+  @media only screen and (min-width: 1024px) {
+    .project-specs {
+      margin-top: 0px; } }
 
 .proj-gallery {
   margin-top: -75px; }
