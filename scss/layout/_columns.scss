@@ -1,0 +1,94 @@
+.grid-line{background-color: $light-grey; width: 1px; position: absolute; height: 100%;}
+.line-1{
+  left: 5%;
+  @media #{$brk-tablet}{
+
+  }
+  @media #{$brk-desktop}{
+    left: 5.05050505%;
+  }
+}
+.line-2{
+  left: 20%;
+  @media #{$brk-tablet}{
+    left: 15%;
+  }
+  @media #{$brk-desktop}{
+    left: 15.0392817071%;
+  }
+}
+.line-3{
+  left: 35%;
+  @media #{$brk-tablet}{
+    left: 25%;
+  }
+  @media #{$brk-desktop}{
+    left: 25.0280583642%;
+  }
+}
+.line-4{
+  left: 50%;
+  @media #{$brk-tablet}{
+    left: 35%;
+  }
+  @media #{$brk-desktop}{
+    left: 35.0168350213%;
+  }
+}
+.line-5{
+  left:65%;
+  @media #{$brk-tablet}{
+    left: 45%;
+  }
+  @media #{$brk-desktop}{
+    left: 45.0056116784%;
+  }
+}
+.line-6{
+  left: 80%;
+  @media #{$brk-tablet}{
+    left: 55%;
+  }
+  @media #{$brk-desktop}{
+    left: 54.9943883355%;
+  }
+}
+.line-7{
+  left: 95%;
+  @media #{$brk-tablet}{
+    left: 65%;
+  }
+  @media #{$brk-desktop}{
+    left: 64.9831649926%;
+  }
+}
+.line-8{
+  display: none;
+  @media #{$brk-tablet}{
+    display: block;
+    left: 75%;
+  }
+  @media #{$brk-desktop}{
+    left: 74.9719416497%;
+  }
+}
+.line-9{
+  display: none;
+  @media #{$brk-tablet}{
+    display: block;
+    left: 85%;
+  }
+  @media #{$brk-desktop}{
+    left: 84.9607183068%;
+  }
+}
+.line-10{
+  display: none;
+  @media #{$brk-tablet}{
+    display: block;
+    left: 95%;
+  }
+  @media #{$brk-desktop}{
+    left: 94.9494949639%;
+  }
+}

@@ -1,0 +1,8 @@
+footer{
+  background-color: black;
+  padding-top:24px;
+  padding-bottom:36px;
+  @media #{$brk-tablet}{
+    padding-bottom:12px;
+  }
+}

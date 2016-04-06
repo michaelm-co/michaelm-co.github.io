@@ -1,0 +1,51 @@
+nav{clear: both;}
+#logo{width: 105px;}
+
+.nav-row{
+  transition: all .3s ease-in;
+  -webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.345, 1.000);
+   -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.345, 1.000);
+     -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.345, 1.000);
+        transition: all 500ms cubic-bezier(0.250, 0.460, 0.345, 1.000); /* custom */
+
+-webkit-transition-timing-function: cubic-bezier(0.250, 0.460, 0.345, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.250, 0.460, 0.345, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.250, 0.460, 0.345, 1.000);
+        transition-timing-function: cubic-bezier(0.250, 0.460, 0.345, 1.000); /* custom */
+  position: relative;
+  z-index: 4;
+  background: black;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 0;
+  transform: scaleY(0);
+  transform-origin: top left;
+  & a{display: inline-block; transform: scale(.5); opacity: 0; transition: all .3s ease-in;
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.345, 1.000);
+       -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.345, 1.000);
+         -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.345, 1.000);
+            transition: all 500ms cubic-bezier(0.250, 0.460, 0.345, 1.000); /* custom */
+
+    -webkit-transition-timing-function: cubic-bezier(0.250, 0.460, 0.345, 1.000);
+       -moz-transition-timing-function: cubic-bezier(0.250, 0.460, 0.345, 1.000);
+         -o-transition-timing-function: cubic-bezier(0.250, 0.460, 0.345, 1.000);
+            transition-timing-function: cubic-bezier(0.250, 0.460, 0.345, 1.000); /* custom */
+  }
+  & span{display: block;}
+  @media #{$brk-desktop}{
+    overflow-x: auto;
+  }
+}
+
+
+.woosh {
+  & a{opacity: 1; transform: scale(1);}
+  & .nav-row{ padding-top: 20px; height: 150px;transform: scaleY(1);}
+}

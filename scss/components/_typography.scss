@@ -1,0 +1,245 @@
+@mixin font-face($family, $file) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path-font}/#{$file}.eot');
+    src: url('#{$path-font}/#{$file}.eot?#iefix') format('embedded-opentype'),
+         url('#{$path-font}/#{$file}.woff') format('woff'),
+         url('#{$path-font}/#{$file}.ttf') format('truetype');
+  }
+}
+
+@mixin text($size, $l-height: null, $textfamily: null, $color: null){
+    font-size: $size;
+    line-height: $l-height;
+    font-family: $textfamily;
+    color: $color;
+}
+
+//in use after setup
+@include font-face('msans-book', m-book);
+@include font-face('msans-black', m-headline-black);
+@include font-face('mserif-book', mserif-book);
+@include font-face('mserif-bold', mserif-bold);
+$sans : "msans-book";
+$sans-black : "msans-black";
+$serif : "mserif-book";
+$serif-bold : "mserif-bold";
+
+body{
+  @include text(16px, 18px, $sans, $text-dark);
+}
+
+#menu{
+  @include text(18px, 18px, $sans-black, $text-dark);
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.nav-row a {
+  @include text(12px, 12px, $sans-black, $white);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+h1.under-numeral{
+  font-size: 200px; z-index: 1; color: black; opacity: .05; margin-bottom: -100px; margin-left: -60px;margin-top: 36px;
+  @media #{$brk-tablet}{
+    margin-bottom: -100px;
+  }
+}
+
+h1.case-studies{
+  @include text(52px, 52px, $sans-black, $white);
+
+  @media #{$brk-desktop}{
+    @include text(84px, 84px, $sans-black, $white);
+  }
+}
+
+h1.myname{
+  @include text(60px, 60px, $sans-black, $orange-red);
+  @media #{$brk-tablet}{
+    @include text(120px, 120px, $sans-black, $orange-red);
+  }
+  @media #{$brk-desktop}{
+    @include text(137px, 137px, $sans-black, $orange-red);
+  }
+}
+
+h1{
+  margin-bottom: 24px;
+  @include text(96px, 96px, $sans-black, $orange-red);
+  position: relative; z-index: 3; text-transform: uppercase;
+  @media #{$brk-tablet}{
+    @include text(120px, 120px, $sans-black, $orange-red);
+  }
+
+  @media #{$brk-desktop}{
+    @include text(137px, 137px, $sans-black, $orange-red);
+    margin-top: 96px;
+    margin-bottom: 72px;
+    margin-top: 36px;
+    margin-bottom: 18px;
+  }
+}
+
+
+h2{
+  @include text(36px, 36px, $sans-black, $orange-red);  padding-bottom: 18px; position: relative; z-index: 3;
+  @media #{$brk-tablet}{
+    @include text(60px, 60px, $sans-black, $orange-red);
+  }
+  @media #{$brk-desktop}{
+    @include text(60px, 60px, $sans-black, $orange-red);
+  }
+}
+h3{
+  @include text(36px, 36px, $sans-black, $text-dark); padding-top: 18px; padding-bottom: 18px;
+  @media #{$brk-tablet}{
+    @include text(52px, 52px, $sans-black, $text-dark);
+  }
+  @media #{$brk-desktop}{
+    @include text(52px, 52px, $sans-black, $text-dark);
+  }
+}
+h4{
+  @include text(22px, 22px, $sans-black, $text-dark); padding-top: 9px; padding-bottom: 9px;
+  @media #{$brk-tablet}{
+    @include text(32px, 32px, $sans-black, $text-dark);
+  }
+  @media #{$brk-desktop}{
+    @include text(32px, 32px, $sans-black, $text-dark);
+  }
+}
+h5{
+  position: relative; z-index: 3;
+  @include text(36px, 36px, $sans-black, $text-dark); padding-top: 9px; padding-bottom: 9px;
+  @media #{$brk-tablet}{
+    @include text(20px, 30px, $sans-black, $text-dark);
+  }
+  @media #{$brk-desktop}{
+    @include text(20px, 30px, $sans-black, $text-dark);
+  }
+}
+
+.hero-profile-text h5{
+  @media #{$brk-desktop}{
+    @include text(20px, 30px, $sans-black, $text-dark);
+  }
+}
+
+p{
+  @include text(16px, 32px, $serif, $text-dark);
+  display: block; margin-bottom: 18px; display: block; clear: both;-webkit-font-smoothing:antialiased;
+  @media #{$brk-tablet}{
+    @include text(20px, 36px, $serif, $text-dark);
+  }
+  @media #{$brk-desktop}{
+    @include text(20px, 36px, $serif, $text-dark);
+  }
+}
+
+.section-500 {
+  & h3{
+    @media #{$brk-tablet}{
+      font-size: 36px;
+      line-height: 36px;
+    }
+    @media #{$brk-desktop}{
+      font-size: 52px;
+      line-height: 52px;
+    }
+  }
+  & p{
+    @media #{$brk-tablet}{
+      font-size: 14px;
+      line-height: 26px;
+      padding-right: 1rem;
+    }
+    @media #{$brk-desktop}{
+      font-size: 20px;
+      line-height: 36px;
+      padding-right: 0px;
+    }
+  }
+}
+
+ol{
+  //padding-top: 18px;
+  counter-reset: ordered-list;
+  padding-bottom: 18px;
+  li{
+    @include text(16px, 32px, $serif, $text-dark);
+    box-sizing: border-box;
+    width:100%;
+    list-style-type:none;
+    list-style-position: inside;
+    line-height: 48px;
+    padding-left: 5%;
+    //background-color: $light-grey;
+    margin-bottom: 2px;
+    color: $text-dark;
+    &:before {
+      content: counter(ordered-list) ".";
+      counter-increment: ordered-list;
+      display: block;
+      padding-right:10px;
+      float: left;
+      color: $orange-red;
+    }
+
+    @media #{$brk-tablet}{
+      @include text(20px, 36px, $serif, $text-dark);
+      line-height: 72px;
+      padding-left: 30px;
+    }
+  }
+}
+
+
+.project-specs{
+
+}
+p.project-obj-title{
+  @include text(22px, 28px, $sans-black, $text-dark);
+  margin-bottom: 0px;
+  margin-top: 18px;
+
+  @media #{$brk-tablet}{
+    @include text(14px, 28px, $sans-black, $text-dark);
+  }
+}
+p.project-obj-detail{
+  @include text(14px, 28px, $sans, $text-medium);
+  margin-bottom: 0px;
+}
+
+.no-transform{text-transform: initial;}
+
+.caption{
+  @include text(14px, 24px, $sans, $orange-red);
+  padding-top: 18px;
+  &::first-line{font-family: $sans-black;}
+}
+
+.proj-cards{
+  & span{
+    text-align: center;
+    @include text(32px, 32px, $sans-black, $white);
+    @media #{$brk-tablet}{
+      @include text(32px, 32px, $sans-black, $white);
+    }
+    @media #{$brk-desktop}{
+      @include text(52px, 52px, $sans-black, $white);
+    }
+  }
+}
+
+footer a{
+  @include text(14px, 32px, $sans, $white);
+  text-decoration: none;
+}
+
+footer p{
+  @include text(14px, 32px, $sans, $text-medium);
+}

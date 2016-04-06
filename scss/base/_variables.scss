@@ -1,0 +1,23 @@
+//descriptive color variables
+$white        :#fff;
+$light-grey   :#F5F5F5;
+$orange-red   :#EB5031;
+
+$text-dark    :#000;
+$text-medium  :#818181;
+$text-light   :#b8b8b8;
+
+$primary-color: $orange-red;
+
+//assets path needs interprolation
+$path-img : '../img';
+$path-font: '../fonts';
+
+.text-orange{color:$orange-red;}
+.text-white{color:$white;}
+.text-dark{color:$text-dark;}
+.text-medium{color:$text-medium;}
+.text-light{color:$text-light;}
+
+$brk-tablet   : 'only screen and (min-width: 768px)';
+$brk-desktop     : 'only screen and (min-width: 1024px)';
