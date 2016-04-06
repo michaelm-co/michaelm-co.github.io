@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, minimum-scale=1.0, maximum-scale=2.0">
+    <title>MICHAELM.CO | Inside</title>
+    <link rel="stylesheet" href="css/application.css">
+    <link rel="stylesheet" href="css/zoom.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://get.gridsetapp.com/34915/" rel="stylesheet" />
+  </head>
+  <body class="inside">
+    <!-- page content -->
+    <div class="wrapper clearfix">
+      <nav class="nav-row">
+        <a href="hbo.html"><img src="img/placeholder.png" alt=""/><span>label</span></a>
+        <a href="#"><img src="img/placeholder.png" alt=""/><span>label</span></a>
+        <a href="#"><img src="img/placeholder.png" alt=""/><span>label</span></a>
+        <a href="#"><img src="img/placeholder.png" alt=""/><span>label</span></a>
+      </nav>
+
+      <div id="nav-bar" class="da2-da10 t2-t11 m2-m7">
+        <a href="index.html"><img id="logo" class="da2 t2 m2-m3" src="img/logo.png"/></a>
+        <button class="hamburger hamburger--spin da10 t10 m7-m8" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+          <a id="menu" href="#">MENU</a>
+        </button>
+      </div>
+
+      <section class="da-all t-all m-all">
+        <div class="da4-da11 t2-t11 m2-m8" style="position:relative;">
+          <img class="da4-da11 t2-t11 m2-m8 profile fadeInUp" src="img/test.png" style="width:100%">
+          <img class="fadeInUp pix" src="img/pix-profile.png">
+        </div>
+
+        <div class="hero-profile-text da2-da6 t3-t10 m-all">
+          <h1 class="da2-da6 t3-t5 m2-m7 myname fadeInUp">Annotate.</h1>
+          <h5 class="da2-da3 t3-t5 m2-m7 fadeInUp text-orange">Rethinking our desktop experience to extend the way students annotate and discuss our rich content on mobile devices.</h5>
+        </div>
+      </section>
+
+      <article id="main-copy">
+        <section class="da2-da8 t2-t9">
+          <section class="da2-da3 t-all m2-m7 project-specs">
+            <section class="m-proj-specs-left-col m2-m3 t7-t8">
+              <p class="project-obj-title">Client</p>
+              <p class="project-obj-detail">Next Thought</p>
+              <p class="project-obj-title">Role</p>
+              <p class="project-obj-detail">Lead Designer</p>
+            </section>
+            <section class="m-proj-specs-right-col m4-m7 t9-t10">
+              <p class="project-obj-title">Contributions</p>
+              <p class="project-obj-detail">Concepting</p>
+              <p class="project-obj-detail">User Flows</p>
+              <p class="project-obj-detail">Wireframing</p>
+              <p class="project-obj-detail">Prototyping</p>
+              <p class="project-obj-detail">UI Design</p>
+              <p class="project-obj-detail">Shipped</p>
+            </section>
+          </section>
+          <section class="da4-da8 t3-t9 m2-m7">
+            <h3>Problem.</h3>
+            <p>Annotation is a natural process people perform to consume complex information, elevate important ideas, and create new meaning. Annotation has been facilitated in the analog environment through the use of highlighters and writing instruments.</p>
+            <p>It terms of the mechanics, or how we annotate can be simplified to two behaviors:</p>
+            <ol>
+              <li>Marking up existing information.</li>
+              <li>Writing reactions to information.</li>
+            </ol>
+            <p>
+              At Next Thought, for some time our desktop webapp has supported both of these behaviors. How do we do this? Everything starts with a mental anchor. It could be a single word, a phrase, a sentence, a paragraph or two. A mental anchor is the piece of information that we want to remember or that we have a reaction to. So after you have selected a specific fragment an interactive tooltip emerges right above your cursor where you can either highlight in one of three colors or leave a comment for yourself or others. This is the core functionality that facilitates annotation across the platform for all content in our courses. In August of last year, I was tasked with porting this experience to our mobile web app and native iPad applications.
+            </p>
+          </section>
+        </section>
+        <img class="da2-da10 t2-t10 m-all" src="img/annotate-3.png" />
+        <section class="da4-da8 t3-t9 m2-m7">
+          <h3>Process.</h3>
+          <h4>Meet with key stakeholders.</h4>
+          <p>
+            I sat down with our Lead Mobile Developer Jonathan Grimes and Head of User Experience Aaron Eskam to get their initial concerns and hopes for the project. On the development side there were some initial concerns about the placement of the action bar. On desktop we position it above the cursor after you select a passage of text. They did not seem optimistic that they could reliably position the action bar above the highlighted text. I had already been thinking about positioning it in another location anyway to avoid collision or prevention of the native action bar that Android and iOS display above selected text. On the design side, our main objective was deciding on a scalable solution adapted for touch devices with limited differences with our desktop web application.
+          </p>
+        </section>
+        <img class="da3-da9 t2-t10 m-all" src="img/annotate-2.jpg" alt=""/>
+        <section class="da4-da8 t3-t9 m2-m7">
+          <h4>Ideate, iterate, prototype.</h4>
+          <p>
+            The earliest most pressing challenge was deciding the location of the action bar.  After some exploration and considering the top was already dedicated to navigation functions, I decided that the bottom of the browser was the best location for it. This placement, while being more manageable had the tradeoff of being distant from the selection. I made a note later that I would need to introduce motion to the solution so that it’s entrance on screen would be noticed. After this I began to sketch user flows how would they add a highlight, remove a highlight, start a new conversation, start a conversation on a highlight, view conversations, just to name a few. After the flows were worked out I roughed out click through prototypes to get feedback. We agreed on a direction and then I began iterating through how to visually treat the various states of the UI.
+          </p>
+        </section>
+        <img class="da-all t-all m-all" src="img/annotate-1.png" alt=""/>
+        <section class="da4-da8 t3-t9 m2-m7">
+          <h4>Document the solution.</h4>
+          <p>
+            Following the initial sprint to design all the states and their appearances, I needed to work through state transitions and produce a high-fidelity prototype to show Jonathan so all the micro-interactions were less guess work. After showing the high-fidelity prototype to Jonathan and Aaron, I got signoff for the design to go into production.
+          </p>
+        </section>
+        <video class="da3-da9 t2-t10 m-all" controls loop autoplay="autoplay">
+          <source src="img/annotate-vid-1.mp4" type="video/mp4">
+          <source src="img/annotate-vid-1.ogg" type="video/webm">
+          <source src="img/annotate-vid-1.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <section class="da4-da8 t3-t9 m2-m7">
+          <h4>Build together.</h4>
+          <p>
+            Something I learned while working at Next Thought was that more often than not design is still happening during the build out phase. Sometimes it is quality control to make sure the developed product matches the design. Other times it is humbly encountering a challenge you did not foresee or the realization that your solution is not working as intended.
+          </p>
+          <p>
+            On this project I encountered all three. I had designed a solution that was dependent on a stack of scroll behaviors and was causing my mobile developer to pull his hair out. One issue was when writing long comments your cursor could end up positioned under the keyboard. This presented an unfortunate experience where the user would have to swipe down every additional line they added. Because this was not ideal and the way forms work in mobile safari, it required some javascript mastery to prevent. On it’s own it might have been fine, but we were locking the scroll of the underlying content area so your could return to your reading without losing your place. The share with widget also had scroll behavior to see smart suggestions and to expand on scroll. In the end we had to simplify. Instead of making the compose view a modal on top of the content area, we saved your current scroll position and seamlessly re-rendered the view with the compose dialog.
+          </p>
+        </section>
+
+        <section class="da4-da8 t3-t9 m2-m7">
+          <h3>Outcome.</h3>
+          <p>
+            The ability for students to select text and highlight it or start rich conversation shipped out to all of our clients’ production environments last fall. We are still waiting to gather analytics to assess how successful the solution has been with our users.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="proj-header" class="da-all t-all m-all section-orange section-500 case-study-header">
+        <h1 class="text-white m2-m7 t2-t3 da2-da3 case-studies">Thanks<br> for<br> reading.</h1>
+      </div>
+
+      <div class="da-all t-all m-all section-white section-500 proj-gallery">
+        <div class="proj-cards m2-m7 t5-t7 da5-da7">
+          <a href="annotate.html">
+            <figure>
+              <img src="img/proj-thumb-bottom-annotate.png" alt="Work Tile">
+              <figcaption class="center">
+                <span>Annotate.</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="proj-cards m2-m7 t8-t10 da8-da10">
+          <a href="#">
+            <figure>
+        			<img src="img/proj-thumb-sm-3.png" alt="Work Tile">
+        			<figcaption class="center">
+        				<span>Project 3</span>
+        			</figcaption>
+        		</figure>
+          </a>
+        </div>
+        <div class="proj-cards m2-m7 t2-t4 da2-da4">
+          <a href="#">
+            <figure>
+        			<img src="img/proj-thumb-sm-4.png" alt="Work Tile">
+        			<figcaption class="center">
+        				<span>Project 1</span>
+        			</figcaption>
+        		</figure>
+          </a>
+        </div>
+        <div class="proj-cards m2-m7 t5-t7 da5-da7">
+          <a href="#">
+            <figure>
+        			<img src="img/proj-thumb-sm-5.png" alt="Work Tile">
+        			<figcaption class="center">
+        				<span>Project 2</span>
+        			</figcaption>
+        		</figure>
+          </a>
+        </div>
+        <div class="proj-cards m2-m7 t8-t10 da8-da10">
+          <a href="#">
+            <figure>
+        			<img src="img/proj-thumb-sm-6.png" alt="Work Tile">
+        			<figcaption class="center">
+        				<span>Project 3</span>
+        			</figcaption>
+        		</figure>
+          </a>
+        </div>
+      </div>
+
+      <footer class="m-all t-all da-all">
+        <p class="m2-m7 t2-t6 da2-da6">Designed and Developed by Michael McLaughlin © 2016. All Rights Reserved.</p>
+        <a class="m2-m7 t7-t8 da7-da8" href="mailto:design@michaelm.co">design@michaelm.co</a>
+        <a class="m2-m7 t9-t10 da9-da10" href="tel:+14056378076">+1.405.637.8076</a>
+      </footer>
+
+
+    <div id="grid-line-wrapper">
+      <div class="grid-line line-1"></div>
+      <div class="grid-line line-2"></div>
+      <div class="grid-line line-3"></div>
+      <div class="grid-line line-4"></div>
+      <div class="grid-line line-5"></div>
+      <div class="grid-line line-6"></div>
+      <div class="grid-line line-7"></div>
+      <div class="grid-line line-8"></div>
+      <div class="grid-line line-9"></div>
+      <div class="grid-line line-10"></div>
+    </div>
+    <script src="https://get.gridsetapp.com/34915/overlay/"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/zoom.js"></script>
+
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      var nav = document.querySelector(".wrapper");
+      // On click
+      hamburger.addEventListener("click", function() {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        nav.classList.toggle("woosh");
+        // Do something else, like open/close menu
+
+      });
+    </script>
+
+  </body>
+</html>

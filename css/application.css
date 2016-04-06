@@ -270,6 +270,9 @@ p {
   #main-copy img {
     margin-bottom: 36px;
     margin-top: 18px; }
+  #main-copy video {
+    margin-bottom: 36px;
+    margin-top: 18px; }
 
 #main-copy .section-lt-grey img {
   margin-top: 0px;
