@@ -252,11 +252,25 @@ p {
 .section-lt-grey {
   background-color: #F5F5F5; }
 
+.section-black {
+  background-color: #000; }
+
 .section-white {
   background-color: none; }
 
 .section-overlap {
   margin-top: -24px; }
+
+.education img {
+  width: 100%;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden; }
+  .education img:hover {
+    transition: opacity .5s;
+    opacity: .9; }
 
 .h-zoom-pic {
   transform: scale(0.99); }
