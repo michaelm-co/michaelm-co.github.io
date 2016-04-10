@@ -299,9 +299,20 @@ p {
   #main-copy img {
     margin-bottom: 36px;
     margin-top: 18px; }
+  #main-copy .slider-pane img {
+    margin: 0px; }
   #main-copy video {
     margin-bottom: 36px;
     margin-top: 18px; }
+
+.slider-caption {
+  background-color: #000;
+  padding-top: 12px;
+  padding-left: 18px;
+  padding-right: 18px; }
+
+.slider-pane .img {
+  margin: 0px; }
 
 #main-copy .section-lt-grey img {
   margin-top: 0px;
@@ -817,6 +828,18 @@ p.project-obj-detail {
       line-height: 52px;
       font-family: "msans-black";
       color: #fff; } }
+
+.slider-caption p {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "mserif-book";
+  color: #fff; }
+  .slider-caption p .num {
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "msans-book";
+    color: #818181;
+    padding-right: 10px; }
 
 footer a {
   font-size: 14px;

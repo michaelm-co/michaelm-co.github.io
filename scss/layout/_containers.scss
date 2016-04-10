@@ -89,8 +89,18 @@ backface-visibility: hidden;
     margin-bottom: 48px;
   }
   & img{margin-bottom: 36px; margin-top: 18px;}
+  & .slider-pane img{margin: 0px;}
   & video{margin-bottom: 36px; margin-top: 18px;}
 }
+
+.slider-caption{
+  background-color: $black;
+  padding-top: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.slider-pane .img{margin: 0px;}
 
 #main-copy .section-lt-grey img{margin-top:0px; margin-bottom: 0px;}
 #main-copy .section-lt-grey{margin-top: 18px; margin-bottom: 36px;}
