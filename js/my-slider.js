@@ -16,5 +16,5 @@ $('.slider-pane').slick({
  slidesToScroll: 1,
  speed: 200,
  asNavFor: '.slider-caption',
- focusOnSelect: false
+ focusOnSelect: true
 });
