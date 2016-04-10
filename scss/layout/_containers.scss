@@ -64,6 +64,21 @@
 backface-visibility: hidden;
   &:hover{transition: opacity .5s; opacity: .9;}
 }
+.bg-container{
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+  @media #{$brk-tablet}{
+    padding-top: 72px;
+    padding-bottom: 72px;
+    margin-bottom: 56px;
+    margin-top: 56px;
+  }
+}
 .h-zoom-pic{transform: scale(.99);}
 
 #main-copy{

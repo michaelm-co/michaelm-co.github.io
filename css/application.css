@@ -272,6 +272,21 @@ p {
     transition: opacity .5s;
     opacity: .9; }
 
+.bg-container {
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-bottom: 36px; }
+  @media only screen and (min-width: 768px) {
+    .bg-container {
+      padding-top: 72px;
+      padding-bottom: 72px;
+      margin-bottom: 56px;
+      margin-top: 56px; } }
+
 .h-zoom-pic {
   transform: scale(0.99); }
 
@@ -465,6 +480,10 @@ footer {
   src: url("../fonts/mserif-book.eot");
   src: url("../fonts/mserif-book.eot?#iefix") format("embedded-opentype"), url("../fonts/mserif-book.woff") format("woff"), url("../fonts/mserif-book.ttf") format("truetype"); }
 @font-face {
+  font-family: "mserif-i";
+  src: url("../fonts/mserif-i.eot");
+  src: url("../fonts/mserif-i.eot?#iefix") format("embedded-opentype"), url("../fonts/mserif-i.woff") format("woff"), url("../fonts/mserif-i.ttf") format("truetype"); }
+@font-face {
   font-family: "mserif-bold";
   src: url("../fonts/mserif-bold.eot");
   src: url("../fonts/mserif-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/mserif-bold.woff") format("woff"), url("../fonts/mserif-bold.ttf") format("truetype"); }
@@ -473,6 +492,9 @@ body {
   line-height: 18px;
   font-family: "msans-book";
   color: #000; }
+
+i {
+  font-family: "mserif-i"; }
 
 #menu {
   font-size: 18px;
@@ -599,6 +621,28 @@ h3 {
       font-family: "msans-black";
       color: #000; } }
 
+h3.pullquote {
+  text-align: center;
+  font-size: 36px;
+  line-height: 46px;
+  font-family: "mserif-i";
+  color: #000; }
+  @media only screen and (min-width: 768px) {
+    h3.pullquote {
+      font-size: 52px;
+      line-height: 60px;
+      font-family: "mserif-i";
+      color: #000;
+      margin-bottom: 18px; } }
+  @media only screen and (min-width: 990px) {
+    h3.pullquote {
+      font-size: 64px;
+      line-height: 72px;
+      font-family: "mserif-i";
+      color: #000; } }
+  h3.pullquote.text-white {
+    color: #fff; }
+
 h4 {
   font-size: 22px;
   line-height: 22px;
@@ -719,7 +763,7 @@ ol {
         line-height: 36px;
         font-family: "mserif-book";
         color: #000;
-        line-height: 72px;
+        line-height: 56px;
         padding-left: 30px; } }
 
 p.project-obj-title {

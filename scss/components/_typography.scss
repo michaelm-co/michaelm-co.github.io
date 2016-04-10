@@ -19,15 +19,19 @@
 @include font-face('msans-book', m-book);
 @include font-face('msans-black', m-headline-black);
 @include font-face('mserif-book', mserif-book);
+@include font-face('mserif-i', mserif-i);
 @include font-face('mserif-bold', mserif-bold);
 $sans : "msans-book";
 $sans-black : "msans-black";
 $serif : "mserif-book";
+$serif-i : "mserif-i";
 $serif-bold : "mserif-bold";
 
 body{
   @include text(16px, 18px, $sans, $text-dark);
 }
+
+i{font-family: $serif-i;}
 
 #menu{
   @include text(18px, 18px, $sans-black, $text-dark);
@@ -101,6 +105,19 @@ h3{
   @media #{$brk-desktop}{
     @include text(52px, 52px, $sans-black, $text-dark);
   }
+}
+
+h3.pullquote{
+  text-align: center;
+  @include text(36px, 46px, $serif-i, $text-dark);
+  @media #{$brk-tablet}{
+    @include text(52px, 60px, $serif-i, $text-dark);
+    margin-bottom: 18px;
+  }
+  @media #{$brk-desktop}{
+    @include text(64px, 72px, $serif-i, $text-dark);
+  }
+  &.text-white{color: $white;}
 }
 h4{
   @include text(22px, 22px, $sans-black, $text-dark); padding-top: 9px; padding-bottom: 9px;
@@ -190,7 +207,7 @@ ol{
 
     @media #{$brk-tablet}{
       @include text(20px, 36px, $serif, $text-dark);
-      line-height: 72px;
+      line-height: 56px;
       padding-left: 30px;
     }
   }
