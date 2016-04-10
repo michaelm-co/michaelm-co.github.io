@@ -300,7 +300,8 @@ p {
     margin-bottom: 36px;
     margin-top: 18px; }
   #main-copy .slider-pane img {
-    margin: 0px; }
+    margin: 0px;
+    width: 100%; }
   #main-copy video {
     margin-bottom: 36px;
     margin-top: 18px; }
