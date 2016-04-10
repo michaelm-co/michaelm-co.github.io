@@ -16,8 +16,8 @@ $('.slider-caption').slick({
 $('.slider-pane').slick({
  slidesToShow: 1,
  slidesToScroll: 1,
- swipeToSlide: true,
  swipe: true,
+ swipeToSlide: true,
  speed: 200,
  asNavFor: '.slider-caption',
  focusOnSelect: true
