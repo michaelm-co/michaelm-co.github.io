@@ -42,6 +42,8 @@
     position: absolute;
   }
 }
+.inside #main-copy .section-500{margin-top: 18px; margin-bottom: 36px;}
+
 .section-500{
   padding-top: 36px;
   padding-bottom: 36px;
@@ -91,8 +93,9 @@ backface-visibility: hidden;
   & img{margin-bottom: 36px; margin-top: 18px;}
   & .slider-pane img{margin: 0px; width:100%;}
   & video{margin-bottom: 36px; margin-top: 18px;}
+  & .section-500 video{margin-top: 10px; margin-bottom: 10px;}
 }
-.section-slider{background-color: $black;}
+.section-slider{background-color: $black; margin-top: 18px; margin-bottom: 36px;}
 .slider-caption{
   background-color: $black;
   padding-top: 12px;

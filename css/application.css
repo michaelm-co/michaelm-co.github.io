@@ -236,6 +236,10 @@ p {
     .inside .hero-profile-text {
       position: absolute; } }
 
+.inside #main-copy .section-500 {
+  margin-top: 18px;
+  margin-bottom: 36px; }
+
 .section-500 {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -305,9 +309,14 @@ p {
   #main-copy video {
     margin-bottom: 36px;
     margin-top: 18px; }
+  #main-copy .section-500 video {
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
 .section-slider {
-  background-color: #000; }
+  background-color: #000;
+  margin-top: 18px;
+  margin-bottom: 36px; }
 
 .slider-caption {
   background-color: #000;
@@ -729,6 +738,10 @@ p {
       line-height: 36px;
       font-family: "mserif-book";
       color: #000; } }
+
+p a {
+  text-decoration: none;
+  color: #EB5031; }
 
 @media only screen and (min-width: 768px) {
   .section-500 h3 {

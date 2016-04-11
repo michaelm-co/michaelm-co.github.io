@@ -156,6 +156,8 @@ p{
   }
 }
 
+p a {text-decoration: none; color: $primary-color;}
+
 .section-500 {
   & h3{
     @media #{$brk-tablet}{
