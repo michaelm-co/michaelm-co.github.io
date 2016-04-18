@@ -118,6 +118,7 @@ h3.pullquote{
     @include text(64px, 72px, $serif-i, $text-dark);
   }
   &.text-white{color: $white;}
+  &.text-orange{color: $primary-color;}
 }
 h4{
   @include text(22px, 22px, $sans-black, $text-dark); padding-top: 9px; padding-bottom: 9px;
@@ -155,6 +156,8 @@ p{
     @include text(20px, 36px, $serif, $text-dark);
   }
 }
+
+p strong{font-family: $serif-bold;}
 
 p a {text-decoration: none; color: $primary-color;}
 

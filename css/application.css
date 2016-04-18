@@ -666,6 +666,8 @@ h3.pullquote {
       color: #000; } }
   h3.pullquote.text-white {
     color: #fff; }
+  h3.pullquote.text-orange {
+    color: #EB5031; }
 
 h4 {
   font-size: 22px;
@@ -738,6 +740,9 @@ p {
       line-height: 36px;
       font-family: "mserif-book";
       color: #000; } }
+
+p strong {
+  font-family: "mserif-bold"; }
 
 p a {
   text-decoration: none;
