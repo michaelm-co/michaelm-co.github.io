@@ -480,8 +480,21 @@ nav {
   transform: scale(1); }
 .woosh .nav-row {
   padding-top: 20px;
-  height: 150px;
+  height: 200px;
   transform: scaleY(1); }
+
+nav .proj-cards {
+  width: 150px;
+  float: left;
+  margin-right: 5px; }
+  nav .proj-cards span {
+    font-size: 20px;
+    padding: 0px; }
+  nav .proj-cards figure {
+    padding-top: 33%; }
+  nav .proj-cards figcaption, nav .proj-cards img, nav .proj-cards figure {
+    width: 150px;
+    height: 150px; }
 
 footer {
   background-color: black;

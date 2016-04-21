@@ -47,5 +47,15 @@ nav{clear: both;}
 
 .woosh {
   & a{opacity: 1; transform: scale(1);}
-  & .nav-row{ padding-top: 20px; height: 150px;transform: scaleY(1);}
+  & .nav-row{ padding-top: 20px; height: 200px;transform: scaleY(1);}
+}
+
+
+nav .proj-cards{
+  width: 150px;
+  float: left;
+  margin-right: 5px;
+  & span{font-size: 20px; padding: 0px;}
+  & figure{padding-top: 33%;}
+  & figcaption, & img, & figure{width: 150px; height: 150px;}
 }
