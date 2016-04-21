@@ -64,20 +64,137 @@
             </section>
           </section>
           <section class="da4-da8 t3-t9 m2-m7">
-            <h3>Problem.</h3>
+            <h3>Business Case for Authoring..</h3>
+            <h4>Refocusing the Company</h4>
             <p>
-              Fulfilling the promise to be a <i>white glove</i> service means not only solving problems in your core product, but also solving problems end-to-end for your clients. At Next Thought we discovered that our potential clients were not just struggling to have meaningful learning experiences online, but also doing a less than stellar job to promote them. As our partnerships with our clients grew we were no long promoting single course, but instead full online master programs. This increase in investment from both our team and client side led us to the strategic choice to help our clients promote their programs as a unique sells advantage.
+              When our Chief Product Officer Rob Reynold joined the company, he outlined a three-front approach to focus the company’s efforts over the next two years. Those fronts were robust course authoring, rich data analytics, and enhance our social layer. I was proud to be lead designer on course authoring and lead designer on what would become communities.
+            </p>
+            <h4>Introduction to LMS.</h4>
+            <p>
+              To fully appreciate the significance of course authoring you have to understand the climate around Learning Management Systems (LMS) and content publishers, mostly universities offering courses to students and entities wanting to distribute professional development material to professionals. Learning management systems are purchased by administrators who often are not the intended users. Administrators want their online ventures to bolster a future looking image, simplify logistics, and analyze the success of their investments.
+            </p>
+            <h4>Current Approach</h4>
+            <p>
+              When a new course was being developed, content would flow from our clients to our project manager to our content developer that would then go through do data entry and markup. If a client wanted to make a change it would go through the same process. Brass tax slow turnaround for our client and more overhead for our team. This translates to courses taking longer to produce and fewer launching.
+            </p>
+            <h4>The team</h4>
+            <p>
+              We had four developers on back-end server, two front-end developers, one quality assurance tester, and me handling user experience and user interface design. I checked-in every other day with our Head of User Experience Aaron Eskam for status update and for valuable feedback on explorations.
             </p>
             <p>
-              Because the core product team would be working on these pages, system thinking was viewed as mission critical on this project. We needed a template that was flexible and scalable enough to require minimal changes between programs. In the fall of last year, I was tasked to research, design, and refine a process to execute successful master page launches.
+              <strong>Outcomes of the Project</strong>
             </p>
-            <p>
-              In the fall of last year, I was tasked to research, design, and refine a process to execute successful master page launches.
-            </p>
+            <ol>
+              <li>Ability to Scale Course Launches</li>
+              <li>Increase Sales Advantage</li>
+              <li>Empowering Professors to Edit Courses without Aid</li>
+            </ol>
             <h3>Process.</h3>
-            <h4>Meet with key stakeholders.</h4>
+            <h4>Establishing Product Requirements</h4>
             <p>
-              I met with Lead Front-End Developer Jonathan Grimes, Head of User Experience Aaron Eskam and Chief Product Officer Rob Reynolds to discuss our client’s current designs and vision for how we could do better. From a design perspective it was not hard to do better. Their pages were set in small type, imageless, and not mobile friendly. From a development perspective,  Jonathan expressed concerns that they wanted to devote energy upfront to make a strong, flexible template that only needed minimal changes between programs and across clients.
+              Our core product team knew we were committed to starting the transition to fully user authored platform. However, the scale and complexity of the product meant we needed to launch a subset of features that would provide immediate value and that was realistic in the timeline. Phase one could be thought about as creating the larger framework and manipulation of existing content. Phase two, which I am currently assigned to, can be thought of as content creation.
+            </p>
+            <ol>
+              <li>Create, Reorder, Name, Delete Lessons and Units</li>
+              <li>Add, Remove, Reorder Content and Sections on Lessons</li>
+              <li>Manage Publication of Lessons</li>
+            </ol>
+            <h4>Acknowledging Technical Challenges</h4>
+            <p>
+              By any standard what we were trying to accomplish in the timeline was an ambitious endeavor. Our development team faced a host of technical challenges, while our course design would be challenged. One technical challenge we knew about that would close the doors on certain interactions in the short term had to do with live data binding. As soon as you made an edit to the course, users would see the change. In the short term there was not a good way to batch save changes to a lesson, meaning edits would need to be saved on each object to prevent unfinished changes from being visible to students.
+            </p>
+            <h4>Competitve Audit</h4>
+            <p>
+              Write something here..
+            </p>
+            <h4>Agile Development Cycle</h4>
+            <p>
+              It was a busy year. By the time the fall semester settled there was not a lot of time to design and develop authoring before the new year. This led to the undesirable effect of design and development starting closely to the same time. Stay one step ahead often meant figuring out the flows and high level interactions during whiteboarding session to get developers started, and having to finesses and produce visual treatments and assets at the same time they were building the scaffolding. Having the project developers across the same room and the project spring meant more conversation and less formal documentation.
+            </p>
+            <h4>Bi-Daily Scrums</h4>
+            <p>
+              Being agile on during this sprint meant being transparent about who need what and when they needed by. Our development team uses scrum methodology to track keep everyone up to date. Because I was designing the system they were building in parallel it was imperative that I was a part of the bi-daily scrums to update the team about what stage of the design I was in and receive updated prioritizations. Our team worked around the clock for two months trying to get authoring designed and built.
+            </p>
+            <h4>Users and the Generational Divide</h4>
+            <p>
+              Designing an authoring tool for the university professors to interact with for something as important as course authoring was challenging. Mostly because of the generational divide when it comes to integration and confidence with digital products. More technology savvy users prefered cleaner aesthetics and needed less visual cues to anticipate possible interactions. Less technology savvy users needed more hints. Many times I reached for Alan Cooper’s book About Face referencing topics such as his chapter fully documenting drag/drop pliancy as a guide through more advanced interactions. But I also looked at leveraging interaction patterns from products that most users are comfortable with like Microsoft Office.
+            </p>
+            <h3>Phase One.</h3>
+            <h4>Publication States</h4>
+            <p>
+              When you are a young product company that sells your product to new clients and they have specific use cases they need to support you often amass a wide range of possible configurations. It very tempting from a developer perspective to conclude that if a client requested it, we build it, and that validates it as a use case. And if it is a valid use case that configuration, even if obscure, needs a UI control for authors to control. The problem with this line of thought is that given the right set of circumstance you can almost justify anything, but building a focused product is giving deference to the useful and minimizing the excessive.
+            </p>
+            <h4>Balancing Clarity with Complexity </h4>
+            <p>
+              One example of this came around the topic of lesson publications. I was told that we needed to support all possible configurations of these three attributes: visible in the course outline, clickable in the course outline, and published. I debated for a week about whether or not visibility, clickability, and publication status should all be independent or not. In the end, I was reminded of an article <a href="http://www.jonkolko.com/writingSimplicityComplexity.php">Simplicity on the Other Side of Complexity</a> where Jon Kolko argues that is not enough to see and capture information you must go a step further to understand. I wanted to make it simple, but not simpler.
+            </p>
+            <p>
+              The solution I took was understanding intent. I was able to communicate that there are three states of publication.
+            </p>
+            <p>
+              <strong>Draft</strong><br>
+              The first state, draft, is I have content that is not ready for consumption. If it is not ready, then nobody should be able to see it or navigate to it.
+            </p>
+            <p>
+              <strong>Schedule</strong><br>
+              The second state, schedule, is that I have content that is ready for publication but I am not ready for anyone to see it. Because we are talking about courses that affect people's grades and jobs it is important we do not surprise them. Schedule content you should be able to see in the outline in our deactivated state, but it’s content should not be accessible until its scheduled date.
+            </p>
+            <p>
+              <strong>Published</strong><br>
+              The final state, is published, means that I have content that is ready for consumption. Published content should be visible in the course outline and its content accessible.
+            </p>
+            <h4>Drag & Drop Pliancy</h4>
+            <p>
+              Our Lead Front-End Developer Andrew Ligon on the project had been working through producing an initial prototype of drag and drop for the course outline and lesson overview. We both reviewed it and we both knew it did not feel right and that it could be much better. I turned to Alan Cooper’s About Face to try to find a way to think through and describe to him how certain triggers should behave.
+            </p>
+            <p>
+              <strong>Outlined Suggestions</strong>
+            </p>
+            <ol>
+              <li>Object should move immediately on drag event</li>
+              <li>Object placeholder should be invisible</li>
+              <li>Object placeholder should be same size as Object</li>
+              <li>Object placeholder should displace objects as you drag it around</li>
+              <li>Containers that are valid drop zone should make space to indicate pliancy</li>
+              <li>There needs to be an indication of invalid drop zone</li>
+              <li>Cursor should switch to open hand on hover, close hand on drag start</li>
+            </ol>
+            <p>
+              We could not stop there though. We had a problem, if you took what I outline about and applied it to tall container, the amount of space you would be displacing could be as large as the screen. Andrew and I continued to prototype. The solution we are currently iterating on is applying a transform to a container and its placeholder so it would be scaled to be no taller than a percentage of the screen.
+            </p>
+            <h4>Course Outline</h4>
+            <p>
+              Editing the course outline allows you to create, name, move units and lessons. Lesson are enclosed in a unit module so that they can be moved as a set. The choice to repeat creation action on a lesson by lesson basis was an attempt to localize where the new lesson would be dropped and reduce reorder distance through the node. I explored hover based interaction and while the best experience for mouse input I wanted to remain open to touchscreens as an input method.(show the interaction of adding a lesson & hover creation interaction)
+            </p>
+            <h4>Lesson Overview</h4>
+            <p>
+              <strong>Sections</strong>
+              When you choose a lesson in the course outline you are take to the lesson overview page. On the lesson overview page you see section of content that let you divide the space. In viewer mode these section are more just colored tags that signpost your way through a lesson, but in edit mode they take on a more container-based appearance. There are two main reasons for this. The first is that I wanted section and content within section to move together not independent. The second is that when dragging content objects up and down a lesson page the colored block establish spatial relationships and when dropping an object it was easier to identify section boundaries.
+            </p>
+            <p>
+              <strong>Creation Wizard</strong>
+              When you choose a lesson in the course outline you are take to the lesson overview page. On the lesson overview page you see section of content that let you divide the space. In viewer mode these section are more just colored tags that signpost your way through a lesson, but in edit mode they take on a more container-based appearance. There are two main reasons for this. The first is that I wanted section and content within section to move together not independent. The second is that when dragging content objects up and down a lesson page the colored block establish spatial relationships and when dropping an object it was easier to identify section boundaries.
+            </p>
+            <h4>Content Creation Flow</h4>
+            <p>
+              I wanted to make the actual content creation form feel very similar in appearance to resulting card for a more WYSIWYG approach to content authoring and in preparation of future releases that might offer a more inline editing experience.
+            </p>
+            <h3>User Feedback</h3>
+            <h4>Where is the reading I just added?</h4>
+            <p>
+              During the sprint it was easy to take small things for granted. Choosing instead to focus on the big system and framework for course authoring, gave way to microinteractions having unfortunate effects. Early feedback during the sprint suggested that users were a little jarred and resorted to reading content objects trying to find the piece they just added. I utilized a simple animation that is triggered after the content modal is dismissed to emphasize newly added content.
+            </p>
+            <h4>Global Sections</h4>
+            <p>
+              Another topic that came up during early testing was the fact that many instructors were using a section scheme for their lessons. The implementation of the design I created had section names and colors scoped on a course by course basis. This often resulted in inconsistencies between lessons or authors having to choose a section tag and color, close the modal go refresh their memory of the previously authored lesson, return and edit the section name and color to match their scheme. This very common user story caused us to revisit sections to support both global and local sections.
+            </p>
+            <h3>Celebrating a Turning Point for Next Thought</h3>
+            <p>
+              After the directors demoed the new functionality to the board of directors and the provost at the University of Oklahoma, we all felt the need to celebrate a company milestone. One of the project managers here at Next Thought purchased ordered a cake fitting for occasion. The one humble blue button labeled “edit” was a symbol for the future of the platform.
+            </p>
+            <h4>Today</h4>
+            <p>
+              Today authoring tools are being used by internal staff to input course objects. We have also brought in professors from various universities and organizations as early adopters. I am currently on a project team to bring native assignments and native content creation to the platform. The next release is scheduled for end of summer 2016.
             </p>
           </section>
         </section>
