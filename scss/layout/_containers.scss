@@ -146,9 +146,10 @@ backface-visibility: hidden;
 }
 
 .proj-cards {
-  & a{text-decoration: none;}
   backface-visibility:hidden;
   -webkit-backface-visibility:hidden;
+  overflow:hidden;
+  & a{text-decoration: none;}
   &:active, &:hover{
     & img{opacity: .3; backface-visibility:hidden;
     -webkit-backface-visibility:hidden;}
@@ -172,4 +173,7 @@ backface-visibility: hidden;
     position: relative;
     box-sizing: border-box;
   }
+}
+.proj-cards:hover img{
+      transform: scale(1.1);
 }
