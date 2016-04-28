@@ -59,3 +59,10 @@ nav .proj-cards{
   & figure{padding-top: 33%;}
   & figcaption, & img, & figure{width: 150px; height: 150px;}
 }
+
+nav .proj-cards{
+  @media only screen and (min-width: 890px){
+    float: none;
+    display: inline-block;;
+  }
+}
