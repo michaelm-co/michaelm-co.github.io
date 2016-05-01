@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width, minimum-scale=1.0, maximum-scale=2.0">
-    <title>MICHAELM.CO | Inside</title>
+    <title>MICHAELM.CO | Edit</title>
     <link rel="stylesheet" href="css/application.css">
     <link rel="stylesheet" href="css/zoom.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -127,6 +127,9 @@
             <p>
               We had four developers on back-end server, two front-end developers, one quality assurance tester, and me handling user experience and user interface design. I checked-in every other day with our Head of User Experience Aaron Eskam for status update and for valuable feedback on explorations.
             </p>
+          </section>
+        </section>
+        <section class="da4-da8 t3-t9 m2-m7">
             <p>
               <strong>Outcomes of the Project</strong>
             </p>
@@ -166,6 +169,13 @@
               Designing an authoring tool for the university professors to interact with for something as important as course authoring was challenging. Mostly because of the generational divide when it comes to integration and confidence with digital products. More technology savvy users prefered cleaner aesthetics and needed less visual cues to anticipate possible interactions. Less technology savvy users needed more hints. Many times I reached for Alan Cooper’s book About Face referencing topics such as his chapter fully documenting drag/drop pliancy as a guide through more advanced interactions. But I also looked at leveraging interaction patterns from products that most users are comfortable with like Microsoft Office.
             </p>
             <h3>Phase One.</h3>
+            <h4>Iterate, iterate, iterate.</h4>
+            <p>
+              asdfasd
+            </p>
+          </section>
+            <img class="da-all t-all m-all" src="img/edit-8.png" alt="">
+          <section class="da4-da8 t3-t9 m2-m7">
             <h4>Publication States</h4>
             <p>
               When you are a young product company that sells your product to new clients and they have specific use cases they need to support you often amass a wide range of possible configurations. It very tempting from a developer perspective to conclude that if a client requested it, we build it, and that validates it as a use case. And if it is a valid use case that configuration, even if obscure, needs a UI control for authors to control. The problem with this line of thought is that given the right set of circumstance you can almost justify anything, but building a focused product is giving deference to the useful and minimizing the excessive.
@@ -181,18 +191,30 @@
               <strong>Draft</strong><br>
               The first state, draft, is I have content that is not ready for consumption. If it is not ready, then nobody should be able to see it or navigate to it.
             </p>
+          </section>
+            <img class="da4-da8 t2-t10 m-all" src="img/edit-draft.png" alt="">
+          <section class="da4-da8 t3-t9 m2-m7">
             <p>
               <strong>Schedule</strong><br>
               The second state, schedule, is that I have content that is ready for publication but I am not ready for anyone to see it. Because we are talking about courses that affect people's grades and jobs it is important we do not surprise them. Schedule content you should be able to see in the outline in our deactivated state, but it’s content should not be accessible until its scheduled date.
             </p>
+          </section>
+            <img class="da4-da8 t2-t10 m-all" src="img/edit-schedule.png" alt="">
+          <section class="da4-da8 t3-t9 m2-m7">
             <p>
               <strong>Published</strong><br>
               The final state, is published, means that I have content that is ready for consumption. Published content should be visible in the course outline and its content accessible.
             </p>
+          </section>
+            <img class="da4-da8 t2-t10 m-all" src="img/edit-publish.png" alt="">
+          <section class="da4-da8 t3-t9 m2-m7">
             <h4>Drag & Drop Pliancy</h4>
             <p>
               Our Lead Front-End Developer Andrew Ligon on the project had been working through producing an initial prototype of drag and drop for the course outline and lesson overview. We both reviewed it and we both knew it did not feel right and that it could be much better. I turned to Alan Cooper’s About Face to try to find a way to think through and describe to him how certain triggers should behave.
             </p>
+          </section>
+            <img class="da3-da9 t2-t10 m-all" src="img/edit-2.png" alt="">
+          <section class="da4-da8 t3-t9 m2-m7">
             <p>
               <strong>Outlined Suggestions</strong>
             </p>
@@ -208,10 +230,21 @@
             <p>
               We could not stop there though. We had a problem, if you took what I outline about and applied it to tall container, the amount of space you would be displacing could be as large as the screen. Andrew and I continued to prototype. The solution we are currently iterating on is applying a transform to a container and its placeholder so it would be scaled to be no taller than a percentage of the screen.
             </p>
+          </section>
+          <video class="da3-da9 t2-t10 m-all" controls="" loop="" autoplay="autoplay">
+            <source src="img/edit-vid-1.mp4" type="video/mp4">
+            <source src="img/edit-vid-1.ogg" type="video/webm">
+            <source src="img/edit-vid-1.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+          </video>
+          <section class="da4-da8 t3-t9 m2-m7">
             <h4>Course Outline</h4>
             <p>
               Editing the course outline allows you to create, name, move units and lessons. Lesson are enclosed in a unit module so that they can be moved as a set. The choice to repeat creation action on a lesson by lesson basis was an attempt to localize where the new lesson would be dropped and reduce reorder distance through the node. I explored hover based interaction and while the best experience for mouse input I wanted to remain open to touchscreens as an input method.(show the interaction of adding a lesson & hover creation interaction)
             </p>
+          </section>
+            <img class="da3-da9 t2-t10 m-all" src="img/edit-2.gif" alt="">
+          <section class="da4-da8 t3-t9 m2-m7">
             <h4>Lesson Overview</h4>
             <p>
               <strong>Sections</strong>
@@ -221,15 +254,29 @@
               <strong>Creation Wizard</strong>
               When you choose a lesson in the course outline you are take to the lesson overview page. On the lesson overview page you see section of content that let you divide the space. In viewer mode these section are more just colored tags that signpost your way through a lesson, but in edit mode they take on a more container-based appearance. There are two main reasons for this. The first is that I wanted section and content within section to move together not independent. The second is that when dragging content objects up and down a lesson page the colored block establish spatial relationships and when dropping an object it was easier to identify section boundaries.
             </p>
+          </section>
+            <img class="da3-da9 t2-t10 m-all" src="img/edit-5.png" alt="">
+          <section class="da4-da8 t3-t9 m2-m7">
             <h4>Content Creation Flow</h4>
             <p>
               I wanted to make the actual content creation form feel very similar in appearance to resulting card for a more WYSIWYG approach to content authoring and in preparation of future releases that might offer a more inline editing experience.
             </p>
+          </section>
+            <img class="da4-da8 t2-t10 m-all" src="img/edit-4.png" alt="">
+          <section class="da4-da8 t3-t9 m2-m7">
             <h3>User Feedback</h3>
             <h4>Where is the reading I just added?</h4>
             <p>
               During the sprint it was easy to take small things for granted. Choosing instead to focus on the big system and framework for course authoring, gave way to microinteractions having unfortunate effects. Early feedback during the sprint suggested that users were a little jarred and resorted to reading content objects trying to find the piece they just added. I utilized a simple animation that is triggered after the content modal is dismissed to emphasize newly added content.
             </p>
+          </section>
+          <video class="da3-da9 t2-t10 m-all" controls="" loop="" autoplay="autoplay">
+            <source src="img/edit-vid-2.mp4" type="video/mp4">
+            <source src="img/edit-vid-2.ogg" type="video/webm">
+            <source src="img/edit-vid-2.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+          </video>
+          <section class="da4-da8 t3-t9 m2-m7">
             <h4>Global Sections</h4>
             <p>
               Another topic that came up during early testing was the fact that many instructors were using a section scheme for their lessons. The implementation of the design I created had section names and colors scoped on a course by course basis. This often resulted in inconsistencies between lessons or authors having to choose a section tag and color, close the modal go refresh their memory of the previously authored lesson, return and edit the section name and color to match their scheme. This very common user story caused us to revisit sections to support both global and local sections.
@@ -238,11 +285,17 @@
             <p>
               After the directors demoed the new functionality to the board of directors and the provost at the University of Oklahoma, we all felt the need to celebrate a company milestone. One of the project managers here at Next Thought purchased ordered a cake fitting for occasion. The one humble blue button labeled “edit” was a symbol for the future of the platform.
             </p>
+          </section>
+            <img class="da3-da9 t2-t10 m-all" src="img/edit-1.jpg" alt="">
+          <section class="da4-da8 t3-t9 m2-m7">
             <h4>Today</h4>
             <p>
               Today authoring tools are being used by internal staff to input course objects. We have also brought in professors from various universities and organizations as early adopters. I am currently on a project team to bring native assignments and native content creation to the platform. The next release is scheduled for end of summer 2016.
             </p>
           </section>
+
+          <img class="da3-da9 t2-t10 m-all" src="img/edit-6.png" alt="">
+
         </section>
         <section class="da4-da8 t3-t9 m2-m7">
 
