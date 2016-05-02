@@ -219,7 +219,8 @@ p {
 .hero-profile-text {
   position: relative;
   padding-bottom: 48px;
-  margin-top: -113px; }
+  /*margin-top: -113px;*/
+  margin-top: -97px; }
   @media only screen and (min-width: 768px) {
     .hero-profile-text {
       margin-top: 0px;
