@@ -894,6 +894,12 @@ footer p {
   font-family: "msans-book";
   color: #818181; }
 
+#fittextone {
+  line-height: 1em; }
+
+#fittexttwo {
+  line-height: 1em; }
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers

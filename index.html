@@ -76,15 +76,15 @@
         </button>
       </div>
 
-      <section class="d-all t-all m-all da-clear t-clear">
+      <section class="da-all t-all m-all da-clear t-clear">
         <div class="da4-da11 t3-t11 m2-m8" style="position:relative;">
-          <img class="da4-da11 t3-t11 profile fadeInUp" src="img/profile3.png" style="width:100%"/>
+          <img class="da4-da11 t3-t11 profile fadeInUp" src="img/profile4.png" style="width:100%"/>
           <img class="fadeInUp pix" src="img/pix-profile.png"/>
         </div>
 
-        <div class="hero-profile-text m2-m7">
-          <h1 class="da2-da6 t2-t6 myname fadeInUp">Michael<br>McLaughlin</h1>
-          <h2 class="da2-da7 t2-t10 text-orange fadeInUp">Maker of digital things. Currently working at an Ed-Tech Startup, NextThought, to craft the online education experience.</h2>
+        <div class="hero-profile-text da-all t-all m2-m7">
+          <h1 id="fittextone" class="da2-da11 t2-t11 fadeInUp">Michael<br>McLaughlin</h1>
+          <h2 id="fittexttwo" class="da2-da6 t2-t6 text-orange fadeInUp">Maker of digital things. Currently working at an education startup to craft the online learning experience.</h2>
         </div>
       </section>
 
@@ -242,6 +242,7 @@
     <script src="https://get.gridsetapp.com/34915/overlay/"></script>
     <script src="js/jquery.js"></script>
     <script src="js/transition.js"></script>
+    <script src="js/jquery.fittext.js"></script>
     <script src="js/zoom.js"></script>
     <script>
       // Look for .hamburger
@@ -253,8 +254,9 @@
         hamburger.classList.toggle("is-active");
         nav.classList.toggle("woosh");
         // Do something else, like open/close menu
-
       });
+      jQuery("#fittextone").fitText(.7);
+      jQuery("#fittexttwo").fitText(1);
     </script>
   </body>
 </html>

@@ -274,3 +274,10 @@ footer a{
 footer p{
   @include text(14px, 32px, $sans, $text-medium);
 }
+
+#fittextone{
+  line-height: 1em;
+}
+#fittexttwo{
+  line-height: 1em;
+}
