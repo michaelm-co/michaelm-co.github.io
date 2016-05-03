@@ -83,7 +83,7 @@
 
         <div class="hero-profile-text da2-da6 t3-t10 m-all">
           <h1 class="da2-da6 t3-t5 m2-m7 myname fadeInUp">Annotate.</h1>
-          <h5 class="da2-da3 t3-t5 m2-m7 fadeInUp text-orange">Rethinking our desktop experience to extend the way students annotate and discuss our rich content on mobile devices.</h5>
+          <h5 class="da2-da3 t3-t5 m2-m7 fadeInUp text-orange">Rethinking our desktop experience to extend the way students annotate and discuss our vibrant content on mobile devices.</h5>
         </div>
       </section>
 
@@ -108,14 +108,14 @@
           </section>
           <section class="da4-da8 t3-t9 m2-m7">
             <h3>Problem.</h3>
-            <p>Annotation is a natural process people perform to consume complex information, elevate important ideas, and create new meaning. Annotation has been facilitated in the analog environment through the use of highlighters and writing instruments.</p>
-            <p>It terms of the mechanics, or how we annotate can be simplified to two behaviors:</p>
+            <p>Annotation is a natural process people perform to consume complex information, elevate important ideas, and create new meaning. In the analog environment, or physical world, we annotate through the use of highlighters and writing instruments, but for online courses, there must be an easier and more constructive way to make notes and keep them.</p>
+            <p>The mechanics of annotation can be simplified to two behaviors:</p>
             <ol>
               <li>Marking up existing information.</li>
               <li>Writing reactions to information.</li>
             </ol>
             <p>
-              At Next Thought, for some time our desktop webapp has supported both of these behaviors. How do we do this? Everything starts with a mental anchor. It could be a single word, a phrase, a sentence, a paragraph or two. A mental anchor is the piece of information that we want to remember or that we have a reaction to. So after you have selected a specific fragment an interactive tooltip emerges right above your cursor where you can either highlight in one of three colors or leave a comment for yourself or others. This is the core functionality that facilitates annotation across the platform for all content in our courses. In August of last year, I was tasked with porting this experience to our mobile web app and native iPad applications.
+              At Next Thought, only our desktop webapp had supported both of these behaviors. It did so by using mental anchors as vantage points for creating comments or making changes. A mental anchor could be a single word, a phrase, a sentence, or a paragraph that elicits a reaction or can be remembered easily. After selecting a specific fragment, an interactive tooltip emerges above the cursor where you can either highlight in one of three colors or leave a comment for yourself or others. Although, this was the core functionality that facilitates annotation across the platform for all content in our courses, it was not a viable option across all technologies. The question became, “How might one select these options on a mobile app or iPad version if there is not a cursor involved?” In August of last year, I was tasked with creating an adaptation that could transfer from device to device.
             </p>
           </section>
         </section>
@@ -124,14 +124,14 @@
           <h3>Process.</h3>
           <h4>Meet with key stakeholders.</h4>
           <p>
-            I sat down with our Lead Mobile Developer Jonathan Grimes and Head of User Experience Aaron Eskam to get their initial concerns and hopes for the project. On the development side there were some initial concerns about the placement of the action bar. On desktop we position it above the cursor after you select a passage of text. They did not seem optimistic that they could reliably position the action bar above the highlighted text. I had already been thinking about positioning it in another location anyway to avoid collision or prevention of the native action bar that Android and iOS display above selected text. On the design side, our main objective was deciding on a scalable solution adapted for touch devices with limited differences with our desktop web application.
+            I sat down with our Lead Mobile Developer Jonathan Grimes and Head of User Experience Aaron Eskam to get their initial concerns and hopes for the project. On the development side, there were some initial concerns about the placement of the action bar. On desktop we position the action bar above the cursor after a passage of text is selected. On a mobile device, it seemed less optimistic that an action bar could be positioned reliably above the highlighted text without causing problems for our developers. I had already been thinking about positioning it in another location anyway to avoid collision or prevention of the native action bar that Android and iOS display above selected text. On the design side, our main objective was deciding on a scalable solution, adapted for touch devices, with limited differences with our desktop web application. While adhering to these objectives, it also needed to be a simple interaction that would be intuitive to our users.
           </p>
         </section>
         <img class="da3-da9 t2-t10 m-all" src="img/annotate-2.jpg" alt=""/>
         <section class="da4-da8 t3-t9 m2-m7">
           <h4>Ideate, iterate, prototype.</h4>
           <p>
-            The earliest most pressing challenge was deciding the location of the action bar.  After some exploration and considering the top was already dedicated to navigation functions, I decided that the bottom of the browser was the best location for it. This placement, while being more manageable had the tradeoff of being distant from the selection. I made a note later that I would need to introduce motion to the solution so that it’s entrance on screen would be noticed. After this I began to sketch user flows how would they add a highlight, remove a highlight, start a new conversation, start a conversation on a highlight, view conversations, just to name a few. After the flows were worked out I roughed out click through prototypes to get feedback. We agreed on a direction and then I began iterating through how to visually treat the various states of the UI.
+            The earliest, most pressing challenge was deciding where action bar would appear. After some exploration, and considering the top was already dedicated to navigation functions, I decided that the bottom of the browser was the best location for it. This placement, while being more manageable, had the tradeoff of being more off-set and distant from the selection. I made a note later that I would need to introduce motion to the solution so that the entrance of the action bar on screen would be noticed. After this, I began to sketch user flows to decide how someone might add a highlight, remove a highlight, start a new conversation, start a conversation on a highlight, view conversations, and other actions. After the flows were worked out I quickly created some click-through prototypes to get feedback. After a direction was decided, I began iterating through how to visually treat the various states of the UI.
           </p>
         </section>
         <img class="da-all t-all m-all" src="img/annotate-1.png" alt=""/>
@@ -141,7 +141,7 @@
             Following the initial sprint to design all the states and their appearances, I needed to work through state transitions and produce a high-fidelity prototype to show Jonathan so all the micro-interactions were less guess work. After showing the high-fidelity prototype to Jonathan and Aaron, I got signoff for the design to go into production.
           </p>
         </section>
-        <video class="da3-da9 t2-t10 m-all" controls loop autoplay="autoplay">
+        <video class="da3-da9 t2-t10 m-all" controls loop autoplay>
           <source src="img/annotate-vid-1.mp4" type="video/mp4">
           <source src="img/annotate-vid-1.ogg" type="video/webm">
           <source src="img/annotate-vid-1.ogg" type="video/ogg">
@@ -258,7 +258,7 @@
         nav.classList.toggle("woosh");
         // Do something else, like open/close menu
       });
-      
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
