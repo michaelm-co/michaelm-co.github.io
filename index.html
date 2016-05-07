@@ -127,12 +127,12 @@
         </div>
 
         <div class="da5-da10 t5-t10 m-all">
-          <img class="h-zoom-pic da5-da6 t5-t6 m2-m4" src="img/section-03-01.gif" alt="" data-action="zoom"/>
-          <img class="h-zoom-pic da7-da8 t7-t8 m5-m7" src="img/section-03-02.gif" alt="" data-action="zoom"/>
-          <img class="h-zoom-pic da9-da10 t9-t10 m2-m4" src="img/section-03-03.gif" alt="" data-action="zoom"/>
-          <img class="h-zoom-pic da5-da6 t5-t6 m5-m7" src="img/section-03-04.gif" alt="" data-action="zoom"/>
-          <img class="h-zoom-pic da7-da8 t7-t8 m2-m4" src="img/section-03-05.gif" alt="" data-action="zoom"/>
-          <img class="h-zoom-pic da9-da10 t9-t10 m5-m7" src="img/section-03-06.gif" alt="" data-action="zoom"/>
+          <img class="lateload h-zoom-pic da5-da6 t5-t6 m2-m4" src="" data-src="img/section-03-01.gif" alt="" data-action="zoom"/>
+          <img class="lateload h-zoom-pic da7-da8 t7-t8 m5-m7" src="" data-src="img/section-03-02.gif" alt="" data-action="zoom"/>
+          <img class="lateload h-zoom-pic da9-da10 t9-t10 m2-m4" src="" data-src="img/section-03-03.gif" alt="" data-action="zoom"/>
+          <img class="lateload h-zoom-pic da5-da6 t5-t6 m5-m7" src="" data-src="img/section-03-04.gif" alt="" data-action="zoom"/>
+          <img class="lateload h-zoom-pic da7-da8 t7-t8 m2-m4" src="" data-src="img/section-03-05.gif" alt="" data-action="zoom"/>
+          <img class="lateload h-zoom-pic da9-da10 t9-t10 m5-m7" src="" data-src="img/section-03-06.gif" alt="" data-action="zoom"/>
         </div>
       </div>
 
@@ -264,6 +264,12 @@
 
       jQuery("#fittextone").fitText(.7);
       jQuery("#fittexttwo").fitText(1);
+
+      $(document).ready(function() {
+        $('.lateload img').each(function() {
+          this.src = $(this).data('src');
+        });
+      });
     </script>
   </body>
 </html>
