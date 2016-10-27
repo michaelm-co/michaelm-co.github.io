@@ -3662,6 +3662,10 @@ footer {
   src: url("../fonts/m-book.eot");
   src: url("../fonts/m-book.eot?#iefix") format("embedded-opentype"), url("../fonts/m-book.woff") format("woff"), url("../fonts/m-book.ttf") format("truetype"); }
 @font-face {
+  font-family: "msans-light";
+  src: url("../fonts/m-light.eot");
+  src: url("../fonts/m-light.eot?#iefix") format("embedded-opentype"), url("../fonts/m-light.woff") format("woff"), url("../fonts/m-light.ttf") format("truetype"); }
+@font-face {
   font-family: "msans-black";
   src: url("../fonts/m-headline-black.eot");
   src: url("../fonts/m-headline-black.eot?#iefix") format("embedded-opentype"), url("../fonts/m-headline-black.woff") format("woff"), url("../fonts/m-headline-black.ttf") format("truetype"); }
@@ -3838,22 +3842,22 @@ h3.pullquote {
 h4 {
   font-size: 22px;
   line-height: 22px;
-  font-family: "msans-black";
-  color: #000;
+  font-family: "msans-light";
+  color: #818181;
   padding-top: 9px;
   padding-bottom: 9px; }
   @media only screen and (min-width: 768px) {
     h4 {
       font-size: 32px;
       line-height: 32px;
-      font-family: "msans-black";
-      color: #000; } }
+      font-family: "msans-light";
+      color: #818181; } }
   @media only screen and (min-width: 990px) {
     h4 {
       font-size: 32px;
       line-height: 32px;
-      font-family: "msans-black";
-      color: #000; } }
+      font-family: "msans-light";
+      color: #818181; } }
 
 h5 {
   position: relative;
